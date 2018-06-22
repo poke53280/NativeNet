@@ -46,7 +46,7 @@ NeuralNet::predict(const x_array& x) const {
 
   for (int iNode = 0; iNode < nLayer0; iNode++) {
 
-    const Neuron<3>& n = _nLayer0[iNode];
+    const Neuron& n = _nLayer0[iNode];
 
     std::array<float, 3> input;
 
